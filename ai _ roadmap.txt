@@ -1,0 +1,115 @@
+AI ENGINEERING ROADMAP
+=====================
+
+Name: Aradhya
+Goal: Become an AI Engineer (Learning by Doing)
+
+---------------------------------------------
+PHASE 0: AI & LLM FUNDAMENTALS
+---------------------------------------------
+Objective:
+Understand what AI is and how Large Language Models (LLMs) work at a high level.
+
+Topics:
+- What is Artificial Intelligence (AI)
+- AI vs Machine Learning vs Deep Learning
+- What are Large Language Models (LLMs)
+- Examples of LLMs: GPT, Claude, Gemini, LLaMA
+- Where LLMs are used in real-world products
+
+Outcome:
+- Can clearly explain what an LLM is
+- Understand the role of AI engineers
+
+---------------------------------------------
+PHASE 1: PROMPT ENGINEERING (CORE FOCUS)
+---------------------------------------------
+Objective:
+Learn how to communicate effectively with LLMs to control outputs.
+
+Topics:
+- What is a prompt
+- System prompt vs User prompt
+- Zero-shot prompting
+- Few-shot prompting
+- Role-based prompting
+- Chain-of-thought prompting
+- Output formatting (tables, JSON, bullet points)
+
+Practice:
+- Ask LLMs to act as a teacher, mentor, developer
+- Improve answers by refining prompts
+- Convert vague prompts into precise prompts
+
+Outcome:
+- Can design effective prompts
+- Can guide LLM responses intentionally
+
+---------------------------------------------
+PHASE 2: LLM BEHAVIOR & LIMITATIONS
+---------------------------------------------
+Objective:
+Understand how LLMs generate responses and where they fail.
+
+Topics:
+- Tokens and tokenization
+- Context window
+- Temperature and randomness
+- Hallucinations
+- Bias and limitations of LLMs
+
+Outcome:
+- Understand why LLM outputs vary
+- Know when not to trust AI responses blindly
+
+---------------------------------------------
+PHASE 3: USING LLMs VIA APIs
+---------------------------------------------
+Objective:
+Learn how applications communicate with LLMs programmatically.
+
+Topics:
+- What is an API
+- How prompts become API requests
+- OpenAI API basics
+- API keys and security basics
+- Simple chatbot workflow
+
+Outcome:
+- Can build basic AI-powered applications
+
+---------------------------------------------
+PHASE 4: AI ENGINEERING TOOLS & WORKFLOWS
+---------------------------------------------
+Objective:
+Move from simple prompts to real AI systems.
+
+Topics:
+- Python fundamentals for AI
+- Prompt templates
+- LangChain / LlamaIndex (intro)
+- Retrieval-Augmented Generation (RAG)
+- Connecting AI with documents and data
+
+Outcome:
+- Can design practical AI solutions
+- Ready for advanced AI engineering concepts
+
+---------------------------------------------
+CURRENT FOCUS
+---------------------------------------------
+- Learning Prompt Engineering
+- Understanding LLM fundamentals
+- Building a static web app to showcase this roadmap
+
+---------------------------------------------
+LEARNING APPROACH
+---------------------------------------------
+- Learn by building
+- Use AI as a coding and learning assistant
+- Improve through iteration and feedback
+- Focus on practical understanding over theory
+
+=============================================
+END OF ROADMAP
+=============================================

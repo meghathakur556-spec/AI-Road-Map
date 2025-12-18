@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering Roadmap</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container that holds all content -->
+    <div class="container">
+        
+        <!-- HEADER SECTION: Title and user information -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🚀 AI Engineering Roadmap</h1>
+                <p class="subtitle">Learning by Doing - Become an AI Engineer</p>
+            </div>
+        </header>
+
+        <!-- USER PROFILE SECTION: Shows learner information -->
+        <section class="profile-section">
+            <div class="profile-card">
+                <h2>📌 Learner Profile</h2>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> <input type="text" value="Aradhya" class="editable-input" placeholder="Enter your name"></p>
+                    <p><strong>Goal:</strong> <input type="text" value="Become an AI Engineer" class="editable-input" placeholder="Enter your goal"></p>
+                    <p><strong>Progress:</strong> <span id="progress-percentage">0%</span></p>
+                </div>
+                <!-- Progress bar visual representation -->
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROADMAP PHASES: Main content area with all phases -->
+        <section class="roadmap-section">
+            <h2 class="section-title">📚 Learning Phases</h2>
+            <div class="phases-container">
+
+                <!-- PHASE 0: AI & LLM FUNDAMENTALS -->
+                <div class="phase-card" data-phase="0">
+                    <!-- Phase header with icon and title -->
+                    <div class="phase-header">
+                        <div class="phase-number">PHASE 0</div>
+                        <h3>AI & LLM Fundamentals</h3>
+                    </div>
+
+                    <!-- Objective section -->
+                    <div class="phase-section">
+                        <h4>🎯 Objective</h4>
+                        <p>Understand what AI is and how Large Language Models (LLMs) work at a high level.</p>
+                    </div>
+
+                    <!-- Topics section with checkbox for each topic -->
+                    <div class="phase-section">
+                        <h4>📖 Topics</h4>
+                        <div class="topics-list">
+                            <label class="topic-item">
+                                <!-- Checkbox to mark topic as completed -->
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>What is Artificial Intelligence (AI)</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>AI vs Machine Learning vs Deep Learning</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>What are Large Language Models (LLMs)</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Examples of LLMs: GPT, Claude, Gemini, LLaMA</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Where LLMs are used in real-world products</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Outcomes section -->
+                    <div class="phase-section">
+                        <h4>✅ Outcome</h4>
+                        <ul class="outcome-list">
+                            <li>Can clearly explain what an LLM is</li>
+                            <li>Understand the role of AI engineers</li>
+                        </ul>
+                    </div>
+
+                    <!-- Notes input area for personal thoughts -->
+                    <div class="phase-section">
+                        <h4>📝 My Notes</h4>
+                        <textarea class="notes-input" placeholder="Write your notes here..."></textarea>
+                    </div>
+
+                    <!-- Mark phase complete button -->
+                    <button class="complete-btn" onclick="completePhase(this)">Mark Phase Complete</button>
+                </div>
+
+                <!-- PHASE 1: PROMPT ENGINEERING -->
+                <div class="phase-card" data-phase="1">
+                    <div class="phase-header">
+                        <div class="phase-number">PHASE 1</div>
+                        <h3>Prompt Engineering (CORE FOCUS)</h3>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>🎯 Objective</h4>
+                        <p>Learn how to communicate effectively with LLMs to control outputs.</p>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>📖 Topics</h4>
+                        <div class="topics-list">
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>What is a prompt</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>System prompt vs User prompt</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Zero-shot prompting</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Few-shot prompting</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Role-based prompting</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Chain-of-thought prompting</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Output formatting (tables, JSON, bullet points)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>🔬 Practice</h4>
+                        <ul class="outcome-list">
+                            <li>Ask LLMs to act as a teacher, mentor, developer</li>
+                            <li>Improve answers by refining prompts</li>
+                            <li>Convert vague prompts into precise prompts</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>✅ Outcome</h4>
+                        <ul class="outcome-list">
+                            <li>Can design effective prompts</li>
+                            <li>Can guide LLM responses intentionally</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>📝 My Notes</h4>
+                        <textarea class="notes-input" placeholder="Write your notes here..."></textarea>
+                    </div>
+
+                    <button class="complete-btn" onclick="completePhase(this)">Mark Phase Complete</button>
+                </div>
+
+                <!-- PHASE 2: LLM BEHAVIOR & LIMITATIONS -->
+                <div class="phase-card" data-phase="2">
+                    <div class="phase-header">
+                        <div class="phase-number">PHASE 2</div>
+                        <h3>LLM Behavior & Limitations</h3>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>🎯 Objective</h4>
+                        <p>Understand how LLMs generate responses and where they fail.</p>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>📖 Topics</h4>
+                        <div class="topics-list">
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Tokens and tokenization</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Context window</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Temperature and randomness</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Hallucinations</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Bias and limitations of LLMs</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>✅ Outcome</h4>
+                        <ul class="outcome-list">
+                            <li>Understand why LLM outputs vary</li>
+                            <li>Know when not to trust AI responses blindly</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>📝 My Notes</h4>
+                        <textarea class="notes-input" placeholder="Write your notes here..."></textarea>
+                    </div>
+
+                    <button class="complete-btn" onclick="completePhase(this)">Mark Phase Complete</button>
+                </div>
+
+                <!-- PHASE 3: USING LLMs VIA APIs -->
+                <div class="phase-card" data-phase="3">
+                    <div class="phase-header">
+                        <div class="phase-number">PHASE 3</div>
+                        <h3>Using LLMs via APIs</h3>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>🎯 Objective</h4>
+                        <p>Learn how applications communicate with LLMs programmatically.</p>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>📖 Topics</h4>
+                        <div class="topics-list">
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>What is an API</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>How prompts become API requests</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>OpenAI API basics</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>API keys and security basics</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Simple chatbot workflow</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>✅ Outcome</h4>
+                        <ul class="outcome-list">
+                            <li>Can build basic AI-powered applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>📝 My Notes</h4>
+                        <textarea class="notes-input" placeholder="Write your notes here..."></textarea>
+                    </div>
+
+                    <button class="complete-btn" onclick="completePhase(this)">Mark Phase Complete</button>
+                </div>
+
+                <!-- PHASE 4: AI ENGINEERING TOOLS & WORKFLOWS -->
+                <div class="phase-card" data-phase="4">
+                    <div class="phase-header">
+                        <div class="phase-number">PHASE 4</div>
+                        <h3>AI Engineering Tools & Workflows</h3>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>🎯 Objective</h4>
+                        <p>Move from simple prompts to real AI systems.</p>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>📖 Topics</h4>
+                        <div class="topics-list">
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Python fundamentals for AI</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Prompt templates</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>LangChain / LlamaIndex (intro)</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Retrieval-Augmented Generation (RAG)</span>
+                            </label>
+                            <label class="topic-item">
+                                <input type="checkbox" class="topic-checkbox" />
+                                <span>Connecting AI with documents and data</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>✅ Outcome</h4>
+                        <ul class="outcome-list">
+                            <li>Can design practical AI solutions</li>
+                            <li>Ready for advanced AI engineering concepts</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-section">
+                        <h4>📝 My Notes</h4>
+                        <textarea class="notes-input" placeholder="Write your notes here..."></textarea>
+                    </div>
+
+                    <button class="complete-btn" onclick="completePhase(this)">Mark Phase Complete</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER: Additional information and actions -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>💡 Keep learning and building! Your AI journey starts here.</p>
+                <div class="footer-buttons">
+                    <button class="reset-btn" onclick="resetProgress()">Reset All Progress</button>
+                    <button class="export-btn" onclick="exportProgress()">Export Progress</button>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- External JavaScript file for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
